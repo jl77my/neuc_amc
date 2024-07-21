@@ -265,7 +265,7 @@ h6 {
   display: flex;
   align-items: center;
   flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 10px; 
+  gap: 10px; /* Space between logo and sitename */
 }
 
 .header .logo img {
@@ -279,6 +279,29 @@ h6 {
   color: var(--heading-color);
   letter-spacing: 1px; /* Adjust spacing if necessary */
   text-transform: uppercase;
+}
+
+.header .navmenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.header .navmenu ul {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .navmenu ul li {
+  margin: 0 10px; /* Adjust as needed */
+}
+
+.header .navmenu ul li a {
+  font-size: 12px; /* Reduce font size for better fit */
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .header .btn-getstarted,
@@ -312,18 +335,23 @@ h6 {
 
   .header .navmenu {
     order: 3;
+    font-size: 13px; /* Reduce font size */
+  }
+
+  .header .navmenu ul li {
+    margin: 0 8px; /* Adjust spacing */
   }
 }
 
 @media (max-width: 768px) {
-  .header .sitename {
-    font-size: 1.2rem; /* Adjust size for smaller screens */
+  .header .navmenu ul li a {
+    font-size: 12px; /* Further reduce font size */
   }
 }
 
 @media (max-width: 480px) {
-  .header .sitename {
-    font-size: 1rem; /* Adjust size for very small screens */
+  .header .navmenu ul li a {
+    font-size: 11px; /* Further reduce font size */
   }
 }
 
