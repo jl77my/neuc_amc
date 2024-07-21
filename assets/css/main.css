@@ -1724,3 +1724,46 @@ hr {
   opacity: 1;
   bottom: 0;
 }
+@media (max-width: 768px) {
+      .header .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+     
+      .header .mobile-nav-toggle {
+        display: block;
+      }
+
+      .header .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        width: 100%;
+        background: var(--background-color);
+        z-index: 998;
+      }
+
+      .header .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header .mobile-nav ul li {
+        border-bottom: 1px solid #fff;
+      }
+
+      .header .mobile-nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .header .mobile-nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
