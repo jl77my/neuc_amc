@@ -264,22 +264,21 @@ h6 {
   line-height: 1;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Allows the content to wrap if needed */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Space between logo and sitename */
 }
 
 .header .logo img {
   max-height: 36px;
-  margin-right: 8px;
 }
 
 .header .logo h1 {
-  font-size: 16px; /* Reduced size */
+  font-size: 16px; /* Adjust as needed */
   margin: 0;
   font-weight: 500;
   color: var(--heading-color);
-  letter-spacing: 1px; /* Reduced spacing for a tighter fit */
+  letter-spacing: 1px; /* Adjust spacing if necessary */
   text-transform: uppercase;
-  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .header .btn-getstarted,
@@ -302,6 +301,7 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+    gap: 8px; /* Adjust gap for smaller screens */
   }
 
   .header .btn-getstarted {
@@ -317,13 +317,13 @@ h6 {
 
 @media (max-width: 768px) {
   .header .sitename {
-    font-size: 1.2rem; /* Further reduced size */
+    font-size: 1.2rem; /* Adjust size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .header .sitename {
-    font-size: 1rem; /* Further reduced size */
+    font-size: 1rem; /* Adjust size for very small screens */
   }
 }
 
