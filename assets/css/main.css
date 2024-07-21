@@ -247,8 +247,7 @@ h6 {
     transform: rotate(360deg);
   }
 }
-
-/*--------------------------------------------------------------
+*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
@@ -263,6 +262,9 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allows the content to wrap if needed */
 }
 
 .header .logo img {
@@ -271,12 +273,13 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 20px;
+  font-size: 16px; /* Reduced size */
   margin: 0;
   font-weight: 500;
   color: var(--heading-color);
-  letter-spacing: 2px;
+  letter-spacing: 1px; /* Reduced spacing for a tighter fit */
   text-transform: uppercase;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .header .btn-getstarted,
@@ -314,13 +317,13 @@ h6 {
 
 @media (max-width: 768px) {
   .header .sitename {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Further reduced size */
   }
 }
 
 @media (max-width: 480px) {
   .header .sitename {
-    font-size: 1rem;
+    font-size: 1rem; /* Further reduced size */
   }
 }
 
