@@ -265,7 +265,7 @@ h6 {
   display: flex;
   align-items: center;
   flex-wrap: nowrap; /* Prevent wrapping */
-  gap: 10px; /* Space between logo and sitename */
+  gap: 10px; 
 }
 
 .header .logo img {
