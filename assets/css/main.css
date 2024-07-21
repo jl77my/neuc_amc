@@ -300,7 +300,7 @@ h6 {
 }
 
 .header .navmenu ul li a {
-  font-size: 12px; /* Reduce font size for better fit */
+  font-size: 16px; /* Reduce font size for better fit */
   white-space: nowrap; /* Prevent text from wrapping */
 }
 
@@ -308,7 +308,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 14px;
+  font-size: 16px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 50px;
@@ -1799,46 +1799,3 @@ hr {
   opacity: 1;
   bottom: 0;
 }
-@media (max-width: 768px) {
-      .header .container-fluid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-     
-      .header .mobile-nav-toggle {
-        display: block;
-      }
-
-      .header .mobile-nav {
-        display: none;
-        position: absolute;
-        top: 60px; /* Adjust as needed */
-        left: 0;
-        width: 100%;
-        background: var(--background-color);
-        z-index: 998;
-      }
-
-      .header .mobile-nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      .header .mobile-nav ul li {
-        border-bottom: 1px solid #fff;
-      }
-
-      .header .mobile-nav ul li a {
-        display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .header .mobile-nav ul li a:hover {
-        background: rgba(255, 255, 255, 0.1);
-      }
-    }
