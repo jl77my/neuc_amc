@@ -26,7 +26,51 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- 
+ <style>
+    @media (max-width: 768px) {
+      .header .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+     
+      .header .mobile-nav-toggle {
+        display: block;
+      }
+
+      .header .mobile-nav {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background: var(--background-color);
+        z-index: 998;
+      }
+
+      .header .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .header .mobile-nav ul li {
+        border-bottom: 1px solid #fff;
+      }
+
+      .header .mobile-nav ul li a {
+        display: block;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .header .mobile-nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  </style>
   
 </head>
 
@@ -82,7 +126,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">Get Started</a>
+    
 
     </div>
   </header>
